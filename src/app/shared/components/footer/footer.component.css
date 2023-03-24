@@ -1,0 +1,64 @@
+/* Estilo general del footer */
+footer {
+    background-color: #333; /* color de fondo del footer */
+    color: #fff; /* color del texto dentro del footer */
+    position: fixed; /* fijar el footer en la parte inferior de la pantalla */
+    bottom: 0; /* ubicar el footer en la parte inferior */
+    left: 0; /* ubicar el footer en el lado izquierdo */
+    width: 100%; /* ancho completo del footer */
+    z-index: 999; /* posición en la pila de capas, para que esté por encima de otros elementos */
+  }
+  
+/* Contenido del footer */
+.footer-content {
+    display: flex; /* usar flexbox para el contenido del footer */
+    flex-wrap: wrap; /* permitir que el contenido se envuelva a una segunda línea si es necesario */
+    justify-content: space-between; /* distribuir los elementos de forma equitativa y dejar un espacio entre ellos */
+    align-items: center; /* centrar verticalmente los elementos */
+    padding: 20px; /* agregar espacio de relleno alrededor del contenido */
+  }
+  
+/* Estilo para el título del footer */
+h3 {
+    font-size: 1.5rem; /* tamaño de fuente */
+    margin-bottom: 10px; /* agregar un espacio en la parte inferior */
+  }
+  
+/* Estilo para el texto dentro del footer */
+p {
+    font-size: 1rem; /* tamaño de fuente */
+    margin-bottom: 10px; /* agregar un espacio en la parte inferior */
+  }
+  
+/* Estilo para la lista de redes sociales */
+.social-media {
+    display: flex; /* usar flexbox para la lista de redes sociales */
+    list-style: none; /* quitar la viñeta de la lista */
+    margin: 0; /* quitar el margen */
+    padding: 0; /* quitar el espacio de relleno */
+  }
+  
+/* Estilo para cada elemento de la lista de redes sociales */
+.social-media li {
+    margin-right: 10px; /* agregar un espacio en la parte derecha */
+  }
+  
+/* Estilo para los enlaces dentro de la lista de redes sociales */
+.social-media li a {
+    color: #fff; /* color del texto */
+    font-size: 1.5rem; /* tamaño de fuente */
+  }
+  
+/* Estilo para la sección inferior del footer */
+.footer-bottom {
+    background-color: #111; /* color de fondo */
+    padding: 10px 20px; /* agregar espacio de relleno */
+    text-align: center; /* alinear el texto al centro */
+  }
+  
+/* Estilo para el texto dentro de la sección inferior del footer */
+.footer-bottom p {
+    font-size: 0.8rem; /* tamaño de fuente */
+    margin: 0; /* quitar el margen */
+  }
+  

@@ -1,0 +1,99 @@
+/* Define los valores de margen y relleno para todo el cuerpo del documento */
+body {
+  margin: 0;
+  padding: 0;
+}
+  
+
+/* Define las propiedades para el encabezado fijo */
+.sticky-header {
+  position: fixed; /* posición fija para que el encabezado permanezca en la parte superior de la página */
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100; /* se superpone a otros elementos */
+  background-color: #fff; /* fondo blanco */
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* sombra debajo del encabezado */
+  animation: slide-down 0.5s ease-in-out; /* animación de deslizamiento hacia abajo al cargar la página */
+}
+  
+/* Define las propiedades para el encabezado fijo al pasar el cursor por encima */
+.sticky-header:hover {
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* sombra más pronunciada cuando se pasa el cursor por encima */
+}
+  
+
+/* Define las propiedades del contenedor del encabezado */
+.header-container {
+  max-width: 1200px; /* ancho máximo del contenedor */
+  margin: 0 auto; /* centrado horizontalmente */
+  display: flex; /* display flex para permitir el posicionamiento de elementos hijos */
+  justify-content: space-between; /* espacio uniforme entre los elementos hijos */
+  align-items: center; /* alineación vertical al centro de los elementos hijos */
+  padding: 20px; /* relleno interno */
+}
+  
+/* Define las propiedades del elemento H1 */
+h1 {
+  font-size: 36px; /* tamaño de fuente de 36 píxeles */
+  font-weight: bold; /* fuente en negrita */
+  margin: 0; /* sin márgenes */
+}
+  
+/* Define las propiedades de la navegación */
+nav {
+  display: flex; /* display flex para permitir el posicionamiento de elementos hijos */
+}
+  
+/* Define las propiedades de la lista de navegación */
+nav ul {
+  list-style: none; /* sin viñetas */
+  display: flex; /* display flex para permitir el posicionamiento de elementos hijos */
+  margin: 0; /* sin márgenes */
+  padding: 0; /* sin relleno */
+}
+  
+/* Define las propiedades de cada elemento de la lista de navegación */
+nav ul li {
+  margin-left: 30px; /* márgenes izquierdos de 30 píxeles para separar cada elemento */
+}
+
+  
+/* Define las propiedades del primer elemento de la lista de navegación */
+nav ul li:first-child {
+  margin-left: 0; /* elimina el margen izquierdo del primer elemento */
+}
+  
+/* Define las propiedades del enlace de cada elemento de la lista de navegación */
+nav ul li a {
+  text-decoration: none; /* sin subrayado de texto */
+  color: #333; /* color de texto negro */
+  font-size: 18px; /* tamaño de fuente de 18 píxeles */
+  font-weight: bold; /* fuente en negrita */
+  transition: color 0.2s ease-in-out; /* transición suave del color de texto al pasar el cursor por encima */
+}
+  
+/* Define las propiedades del enlace de cada elemento de la lista de navegación */
+nav ul li a {
+  text-decoration: none; /* sin subrayado de texto */
+  color: #333; /* color de texto negro */
+  font-size: 18px; /* tamaño de fuente de 18 píxeles */
+  font-weight: bold; /* fuente en negrita */
+  transition: color 0.2s ease-in-out; /* transición suave del color de texto al pasar el cursor por encima */
+}
+
+/* Define las propiedades del enlace de cada elemento de la lista de navegación cuando se coloca el cursor sobre él */
+nav ul li a:hover {
+  color: #e74c3c; /* cambio de color de texto a rojo oscuro */
+}
+
+/* Define una animación de deslizamiento hacia abajo */
+@keyframes slide-down {
+  0% {
+    transform: translateY(-100%); /* comienza con el elemento desplazado hacia arriba */
+  }
+  100% {
+    transform: translateY(0); /* termina con el elemento en su posición original */
+  }
+}
+  
