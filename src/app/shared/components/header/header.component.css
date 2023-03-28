@@ -16,16 +16,17 @@
   display: flex;
   max-width: calc(100% - 200px);
   margin: 0 auto;
-  height: 70px;
+  height: 120px;
   align-items: center;
   justify-content: space-between;
 }
 nav .content{
   display: flex;
   align-items: center;
+
 }
 nav .content .links{
-  margin-left: 80px;
+  margin-left: 340px;
   display: flex;
 }
 .content .logo a{
@@ -162,7 +163,7 @@ nav .content .links{
     padding: 0 20px;
   }
   nav .content .links{
-    margin-left: 30px;
+    margin-left: 180px;
   }
   .content .links li a{
     padding: 8px 13px;
@@ -175,7 +176,7 @@ nav .content .links{
   }
 }
 
-@media screen and (max-width: 900px){
+@media screen and (max-width: 930px){
   .wrapper .menu-icon{
     display: block;
   }
