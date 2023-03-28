@@ -8,6 +8,7 @@
 }
 .wrapper{
   background: #686b70;
+  opacity: 0.8;
   position: fixed;
   width: 100%;
 }

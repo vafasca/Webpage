@@ -12,6 +12,7 @@ export class HeaderComponent implements OnInit {
   test!: boolean;
   showNav = true;
   showNav2 = false;
+  about = '/about';
 
   constructor() { }
 
