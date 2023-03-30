@@ -1,64 +1,153 @@
-/* Estilo general del footer */
-footer {
-    background-color: #333; /* color de fondo del footer */
-    color: #fff; /* color del texto dentro del footer */
-    position: fixed; /* fijar el footer en la parte inferior de la pantalla */
-    bottom: 0; /* ubicar el footer en la parte inferior */
-    left: 0; /* ubicar el footer en el lado izquierdo */
-    width: 100%; /* ancho completo del footer */
-    z-index: 999; /* posición en la pila de capas, para que esté por encima de otros elementos */
-  }
-  
-/* Contenido del footer */
-.footer-content {
-    display: flex; /* usar flexbox para el contenido del footer */
-    flex-wrap: wrap; /* permitir que el contenido se envuelva a una segunda línea si es necesario */
-    justify-content: space-between; /* distribuir los elementos de forma equitativa y dejar un espacio entre ellos */
-    align-items: center; /* centrar verticalmente los elementos */
-    padding: 20px; /* agregar espacio de relleno alrededor del contenido */
-  }
-  
-/* Estilo para el título del footer */
-h3 {
-    font-size: 1.5rem; /* tamaño de fuente */
-    margin-bottom: 10px; /* agregar un espacio en la parte inferior */
-  }
-  
-/* Estilo para el texto dentro del footer */
-p {
-    font-size: 1rem; /* tamaño de fuente */
-    margin-bottom: 10px; /* agregar un espacio en la parte inferior */
-  }
-  
-/* Estilo para la lista de redes sociales */
+
+footer{
+   width: 100%;
+   background: #666;
+   display: block; 
+}
+footer:hover{
+  background-color: grey;
+}
+.inner-footer {
+   width: 95%;
+   margin: auto;
+   padding: 30px 10px;
+   display: flex; 
+   flex-wrap: wrap; 
+   box-sizing: border-box;
+   justify-content: center; 
+
+
+}
+
+.footer-items {
+   width: 25%;
+   padding: 10px 20px;
+   box-sizing: border-box;
+
+}
+
+h1 {
+   padding: 10px 0;
+   font-size: 25px;
+   color: #fff;
+   text-transform: uppercase; 
+}
+
+.footer-items p{
+    color: #fff;
+    font-size: 16px;
+    text-align: justify;
+    line-height: 25px; 
+    font-family: 'Oswald', sans-serif;
+
+
+}
+
+h2 {
+   margin: 10px 0;
+   color: rgb(17, 17, 17);
+   font-size: 16px; 
+   font-weight: lighter;
+   text-transform: uppercase; 
+
+}
+
+.border {
+   height: 2px;
+   width: 40px; 
+   background: #ff9800;
+
+}
+
+ul {
+   list-style: none;
+   color: #fff;
+   font-size: 15px;
+   letter-spacing: 0.5px;
+
+}
+
+ul a {
+   text-decoration: none;
+   outline: none; 
+   color: #fff;
+   transition: 0.3s; 
+
+}
+
+ul a:hover {
+    color: #ff9800;
+
+}
+
+ul li {
+   margin: 10px 0;
+   height: 25px; 
+}
+
+li i {
+    margin-right: 20px;
+
+}
+
 .social-media {
-    display: flex; /* usar flexbox para la lista de redes sociales */
-    list-style: none; /* quitar la viñeta de la lista */
-    margin: 0; /* quitar el margen */
-    padding: 0; /* quitar el espacio de relleno */
-  }
-  
-/* Estilo para cada elemento de la lista de redes sociales */
-.social-media li {
-    margin-right: 10px; /* agregar un espacio en la parte derecha */
-  }
-  
-/* Estilo para los enlaces dentro de la lista de redes sociales */
-.social-media li a {
-    color: #fff; /* color del texto */
-    font-size: 1.5rem; /* tamaño de fuente */
-  }
-  
-/* Estilo para la sección inferior del footer */
+   width: 100%; 
+   color: #fff;
+   text-align: center; 
+}
+
+.social-media a {
+   text-decoration: none;
+
+}
+
+.social-media i {
+   height: 15px;
+   width: 15px;
+   margin: 20px 5px; 
+   padding: 10px;
+   color: #fff; 
+   border-radius: 50%; 
+   border: 1px solid grey; 
+   transition: 0.3s; 
+
+
+}
+
+.social-media i:hover {
+    background: grey; 
+
+
+}
+
 .footer-bottom {
-    background-color: #111; /* color de fondo */
-    padding: 10px 20px; /* agregar espacio de relleno */
-    text-align: center; /* alinear el texto al centro */
-  }
-  
-/* Estilo para el texto dentro de la sección inferior del footer */
-.footer-bottom p {
-    font-size: 0.8rem; /* tamaño de fuente */
-    margin: 0; /* quitar el margen */
-  }
-  
+   padding: 10px;
+   background: #3d544f;
+   color: #fff; 
+   font-size: 12px; 
+
+}
+
+@media screen and (max-width: 1085px) {
+   .footer-items {
+     width: 50%;
+
+   }
+
+}
+
+@media screen and (max-width: 600px) {
+    .footer-items {
+      width: 100%;
+ 
+    }
+ 
+ }
+
+ @media screen and (max-width: 478px) {
+    .footer-items {
+      width: 100%;
+ 
+    }
+ 
+ }

@@ -1,3 +1,5 @@
-.cuerpo{
-    background-color: rgb(64, 206, 106);
+main{
+    background-size: 100% 100%;
+    /* margin-top: 120px; */
+    width: 100%;
 }
