@@ -6,15 +6,18 @@
   text-decoration: none;
   font-family: 'Poppins', sans-serif;
 }
-.wrapper{
-  background: #686b70;
-  opacity: 0.5;
-  /* position: fixed; */
+.wrapper {
   position: fixed;
   top: 0;
   z-index: 9999;
   width: 100%;
+  background-color: rgba(104, 107, 112, 0.5);
 }
+
+.wrapper ul li {
+  opacity: 0.9;
+}
+
 .wrapper nav{
   /* position: relative; */
   display: flex;
@@ -28,6 +31,7 @@ nav .content{
   display: flex;
   align-items: center;
 }
+
 nav .content .links{
   margin-left: 90px;
   display: flex;
@@ -265,6 +269,6 @@ nav .content .links{
 }
 
 .wrapper:hover {
-  background-color: #000000;
+  background-color: #424141;
   opacity: 5;
 }
