@@ -1,19 +1,17 @@
-<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
 
-<div class="wrapper">
-  <nav>
-    <input type="checkbox" id="show-menu">
-    <label for="show-menu" class="menu-icon"><p class="icon-set"><mat-icon>reorder</mat-icon></p></label>
-    <div class="content">
-    <div class="logo"><a routerLink="/home"><img id="imge-logo" src="{{logo}}" alt="Logo" title="Digital Harbor"></a></div>
-      <ul class="links">
-        <li><a routerLink="/about" routerLinkActive="router-link-active" >Acerca de Nosotros</a></li>
-        <li><a routerLink="/jobs">Trabaja con Nosotros</a></li>
-        <li><a routerLink="/contact">DH Academy</a></li>
-        <li><a routerLink="/contact">Contactanos</a></li>
-      </ul>
-    </div>
-    <label class="login"><p title="Login"><mat-icon>login</mat-icon></p></label>
+<header class="header">
+
+  <div class="logo">
+    <a routerLink="/home"><img id="image-logo" src="{{logo}}" alt="Logo" title="Digital Harbor"></a>
+  </div>
+  <nav class="nav-menu">
+    <ul>
+      <li><a routerLink="/about" routerLinkActive="router-link-active" >INICIO</a></li>
+      <li><a routerLink="/jobs">CONOCE DH</a></li>
+      <li><a routerLink="/contait">CONVIERTETE EN UN DHR</a></li>
+      <li><a routerLink="/contact">BLOG</a></li>
+      <li><a routerLink="/contact">HAZ CONTACTO CON DH</a></li>
+    </ul>
   </nav>
-</div>
+</header>

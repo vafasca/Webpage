@@ -1,5 +1,12 @@
-main{
+/* main{
     background-size: 100% 100%;
-    /* margin-top: 120px; */
+    /* margin-top: 120px;
     width: 100%;
+}
+*/
+header{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
 }
