@@ -7,6 +7,7 @@ import { SharedModule } from 'src/app/shared/shared.module';
 import { HomeCarouselComponent } from './home-carousel/home-carousel.component';
 import { HomeParalaxComponent } from './home-paralax/home-paralax.component';
 import { HomeSloganComponent } from './home-slogan/home-slogan.component';
+import { HomePartialAboutUsComponent } from './home-partial-about-us/home-partial-about-us.component';
 
 
 @NgModule({
@@ -14,7 +15,8 @@ import { HomeSloganComponent } from './home-slogan/home-slogan.component';
     HomeComponent,
     HomeCarouselComponent,
     HomeParalaxComponent,
-    HomeSloganComponent
+    HomeSloganComponent,
+    HomePartialAboutUsComponent
   ],
   imports: [
     CommonModule,

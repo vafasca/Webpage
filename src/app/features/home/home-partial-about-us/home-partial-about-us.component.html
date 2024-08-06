@@ -1,0 +1,35 @@
+<div class="about-us-container">
+    <section class="about-us">
+        <div class="title-about-us">
+        <h2 class="elementor-heading-title">DESCUBRE MÁS SOBRE NOSOTROS</h2>
+        </div>
+        <div class="content-about-us">
+        <div class="video">
+            <iframe
+                id="videoFrame"
+                src="https://www.youtube.com/embed/SCn1KF9P3yo?modestbranding=1&controls=0&rel=0&iv_load_policy=3"
+                frameborder="0"
+                allow="encrypted-media">
+            </iframe>
+            <div class="overlay" (click)="hideImage()" *ngIf="mostrar">
+                <img src="../../../../assets/images/video-background.png" alt="Overlay Image">
+                <!-- Icono de reproducción más grande -->
+                <i class="fas fa-play play-icon"></i>
+            </div>
+        </div>
+        <div class="text">
+        <div class="subtitle">
+            <h3>Nos mueve la innovación, la creatividad, la pasión y la determinación.</h3>
+        </div>
+        <div class="content-subtitle">
+            <p>Somos una empresa de desarrollo de software propio. A diferencia de otras empresas, no somos un proveedor de servicios de outsourcing. Nuestros productos están revolucionando las aplicaciones empresariales en el mercado estadounidense.</p>
+            <p>Contamos con un equipo de expertos en tecnología y una amplia experiencia en diferentes sectores, brindamos soluciones innovadoras y de alta calidad para impulsar el éxito de nuestros clientes en un mundo digital en constante evolución.</p>
+            <p>Nuestro enfoque se basa en la colaboración, la excelencia y la entrega de resultados WOW.</p>
+        </div>
+        <div class="about-us-button">
+            <button class="learn-more">Leer sobre nosotros &gt;</button>
+        </div>
+        </div>
+    </div>
+    </section>
+</div>
