@@ -8,6 +8,7 @@ import { HomeCarouselComponent } from './home-carousel/home-carousel.component';
 import { HomeParalaxComponent } from './home-paralax/home-paralax.component';
 import { HomeSloganComponent } from './home-slogan/home-slogan.component';
 import { HomePartialAboutUsComponent } from './home-partial-about-us/home-partial-about-us.component';
+import { HomePartialTalentProgramComponent } from './home-partial-talent-program/home-partial-talent-program.component';
 
 
 @NgModule({
@@ -16,7 +17,8 @@ import { HomePartialAboutUsComponent } from './home-partial-about-us/home-partia
     HomeCarouselComponent,
     HomeParalaxComponent,
     HomeSloganComponent,
-    HomePartialAboutUsComponent
+    HomePartialAboutUsComponent,
+    HomePartialTalentProgramComponent
   ],
   imports: [
     CommonModule,

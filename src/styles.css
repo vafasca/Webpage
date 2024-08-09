@@ -10,7 +10,7 @@ body {
 
 body {
   font-family: Roboto, "Helvetica Neue", sans-serif;
-  background-image: url('/assets/images/PAGINA-WEB-Version-black-EDITABLE-2-1-scaled.jpg');
+  background-image: url('/assets/images/testing_bg2.jpg');
   background-size: cover; /* Hace que la imagen cubra todo el fondo */
   background-repeat: no-repeat; /* Evita que la imagen se repita */
   background-attachment: fixed; /* La imagen de fondo se mantiene fija durante el desplazamiento */

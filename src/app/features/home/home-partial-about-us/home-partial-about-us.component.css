@@ -1,7 +1,3 @@
-.title-about-us {
-
-}
-
 .title-about-us .elementor-heading-title {
     margin-bottom: 20px;
     color: #FFFFFF;
@@ -101,8 +97,12 @@ button.learn-more {
     font-weight: bold;
 }
 
-button.learn-more:hover {
+/* button.learn-more:hover {
     background: linear-gradient(to right, #EE764A, #c36);
+} */
+
+button.learn-more:hover {
+    background: linear-gradient(to right, #56D2D2, #3695D4, #246BB2);
 }
 
 p {

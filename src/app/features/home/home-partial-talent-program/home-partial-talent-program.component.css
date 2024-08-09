@@ -1,0 +1,103 @@
+.elementor-section-talent-program{
+    display: flex;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+    width: 100%;
+    padding-bottom: 200px;
+}
+
+.text-container {
+    display: flex;
+    justify-content: space-between;
+    margin-right: 20vh;
+    margin-top: 150px;
+    padding: 100px 100px 100px 100px;
+
+    background: linear-gradient(to right, #56D2D2, #3695D4, #246BB2);
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+    opacity: 0.7;
+}
+
+.left-elementor, .right-elementor {
+    width: 300px;
+}
+
+.elementor-icon-list-item {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 20px;
+}
+
+
+.elementor-heading-title{
+    padding: 0;
+    margin: 0;
+    color: #FFFFFF;
+    font-size: 44px;
+    text-transform: uppercase;
+    font-style: italic;
+    text-transform: uppercase;
+    display: block;
+    line-height: 42px;
+    word-spacing: 100vw;
+    white-space: pre-wrap;
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.elementor-title{
+    padding-top: 200px;
+    padding-right: 100px;
+}
+
+.elementor-icon-list-items{
+    list-style: none;
+}
+
+.elementor-icon-list-text{
+    font-size: 20px;
+}
+
+.title-container{
+    margin-left: 100px;
+}
+
+button.learn-more {
+    margin-top: 20px;
+    padding: 13px 42px 13px 42px;
+    border-width: 2px;
+    border-radius: 5px;
+    color: #FFFFFF;
+    text-decoration: none;
+    border-color: #FFFFFF;
+    cursor: pointer;
+    font-size: 1em;
+    background-color: transparent;
+    font-weight: bold;
+}
+
+/* button.learn-more:hover {
+    background: linear-gradient(to right, #EE764A, #c36);
+} before*/
+
+button.learn-more:hover {
+    background: linear-gradient(to right, #56D2D2, #3695D4, #246BB2);
+}
+
+.elementor-icon-list-icon {
+    flex-shrink: 0;
+}
+
+.elementor-icon-list-icon img {
+    width: 50px;
+    height: 50px;
+}
+
+.elementor-icon-list-text {
+    margin-left: 10px;
+    display: inline-block;
+    vertical-align: top;
+}
