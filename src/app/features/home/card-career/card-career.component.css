@@ -1,0 +1,67 @@
+.card__article {
+  width: 254px;
+  height: 350px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 1.5rem;
+}
+
+.card__img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 1.5rem;
+}
+
+.card__data {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  background-color: #ffffff;
+  padding: 1.5rem;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+  border-radius: 0 0 1rem 1rem;
+  position: absolute;
+  bottom: -100px;
+  left: 0;
+  opacity: 0;
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+
+.card__location {
+  font-size: 0.813rem;
+  margin-bottom: 0.25rem;
+  color: #ffffff;
+}
+
+.card__published{
+  font-size: 0.813rem;
+  margin-bottom: 0.25rem;
+  font-weight: bold;
+}
+
+.card__title {
+  font-size: 1.25rem;
+  font-weight: 500;
+  color: #ffffff;
+  margin-bottom: 0.75rem;
+}
+
+.card__button {
+  text-decoration: none;
+  font-size: 0.813rem;
+  font-weight: 500;
+  color: #ffffff;
+}
+
+.card__button:hover {
+  text-decoration: underline;
+}
+
+.card__article:hover .card__data {
+  transform: translateY(-100px);
+  opacity: 1;
+  background: linear-gradient(to right, #56D2D2, #3695D4, #246BB2);
+}

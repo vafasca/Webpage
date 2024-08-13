@@ -1,0 +1,8 @@
+<div class="list-container">
+    <app-card-career *ngFor="let card of cards"
+                    [imageUrl]="card.imageUrl"
+                    [title]="card.title"
+                    [location]="card.location"
+                    [published]="card.published">
+    </app-card-career>
+</div>

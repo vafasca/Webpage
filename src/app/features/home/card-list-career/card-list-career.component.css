@@ -1,0 +1,9 @@
+.list-container {
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center;     /* Centra verticalmente */
+    flex-wrap: wrap;         /* Permite que las tarjetas se distribuyan en varias filas si es necesario */
+    gap: 20px;               /* Espacio entre las tarjetas */
+    margin: 0 auto;          /* Asegura que esté centrado */
+    padding: 20px;           /* Espacio alrededor de la lista */
+}

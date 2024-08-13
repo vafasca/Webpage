@@ -9,6 +9,9 @@ import { HomeParalaxComponent } from './home-paralax/home-paralax.component';
 import { HomeSloganComponent } from './home-slogan/home-slogan.component';
 import { HomePartialAboutUsComponent } from './home-partial-about-us/home-partial-about-us.component';
 import { HomePartialTalentProgramComponent } from './home-partial-talent-program/home-partial-talent-program.component';
+import { HomePartialCareersComponent } from './home-partial-careers/home-partial-careers.component';
+import { CardListCareerComponent } from './card-list-career/card-list-career.component';
+import { CardCareerComponent } from './card-career/card-career.component';
 
 
 @NgModule({
@@ -18,7 +21,10 @@ import { HomePartialTalentProgramComponent } from './home-partial-talent-program
     HomeParalaxComponent,
     HomeSloganComponent,
     HomePartialAboutUsComponent,
-    HomePartialTalentProgramComponent
+    HomePartialTalentProgramComponent,
+    HomePartialCareersComponent,
+    CardListCareerComponent,
+    CardCareerComponent
   ],
   imports: [
     CommonModule,
