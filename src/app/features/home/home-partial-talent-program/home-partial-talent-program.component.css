@@ -1,20 +1,18 @@
 .elementor-section-talent-program{
-    display: flex;
+    margin: 0;
     color: white;
-    justify-content: center;
-    align-items: center;
-    height: 400px;
-    width: 100%;
-    padding-bottom: 200px;
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+    height: 80vh;/*  Asegura que el contenedor tenga una altura suficiente para mostrar el centrado vertical */
+    margin: 0 100px 0 100px;
+    gap: 10px;
 }
 
 .text-container {
     display: flex;
     justify-content: space-between;
-    margin-right: 20vh;
-    margin-top: 150px;
-    padding: 100px 100px 100px 100px;
-
+    padding: 80px 50px 80px 50px;
     background: linear-gradient(to right, #56D2D2, #3695D4, #246BB2);
     border-radius: 10px;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
@@ -22,7 +20,7 @@
 }
 
 .left-elementor, .right-elementor {
-    width: 300px;
+    width: 50vh;
 }
 
 .elementor-icon-list-item {
@@ -31,26 +29,16 @@
     margin-bottom: 20px;
 }
 
-
 .elementor-heading-title{
-    padding: 0;
-    margin: 0;
     color: #FFFFFF;
     font-size: 44px;
-    text-transform: uppercase;
     font-style: italic;
     text-transform: uppercase;
-    display: block;
     line-height: 42px;
     word-spacing: 100vw;
     white-space: pre-wrap;
     font-weight: bold;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
-
-.elementor-title{
-    padding-top: 200px;
-    padding-right: 100px;
 }
 
 .elementor-icon-list-items{
@@ -59,10 +47,6 @@
 
 .elementor-icon-list-text{
     font-size: 20px;
-}
-
-.title-container{
-    margin-left: 100px;
 }
 
 button.learn-more {
@@ -78,10 +62,6 @@ button.learn-more {
     background-color: transparent;
     font-weight: bold;
 }
-
-/* button.learn-more:hover {
-    background: linear-gradient(to right, #EE764A, #c36);
-} before*/
 
 button.learn-more:hover {
     background: linear-gradient(to right, #56D2D2, #3695D4, #246BB2);

@@ -9,7 +9,7 @@ body {
 }
 
 body {
-  font-family: Roboto, "Helvetica Neue", sans-serif;
+  font-family: 'Noir Pro', Roboto, "Helvetica Neue", sans-serif;
   background-image: url('/assets/images/testing_bg2.jpg');
   background-size: cover; /* Hace que la imagen cubra todo el fondo */
   background-repeat: no-repeat; /* Evita que la imagen se repita */
