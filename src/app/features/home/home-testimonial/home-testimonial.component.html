@@ -1,4 +1,4 @@
-<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+<!-- <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
 <div class="testimonial-container">
     <div class="heading-title-testimonial">
       <h2 class="elementor-heading-title">Ser un DHR</h2>
@@ -28,4 +28,12 @@
       </ng-container>
     </owl-carousel-o>
   </div>
-  
+   -->
+
+   <div>Some tags before</div>
+   <owl-carousel-o [options]="customOptions">
+     <ng-template carouselSlide><img src="../../../../assets/images/prueba.png"></ng-template>  
+     <ng-template carouselSlide>Slide 2</ng-template>  
+     <ng-template carouselSlide>Slide 3</ng-template>  
+   </owl-carousel-o>
+   <div>Some tags after</div>
