@@ -8,7 +8,7 @@
   })
   export class HomeTestimonialComponent implements OnInit {
 
- customOptions: any = {
+   customOptions: any = {
        loop: true,
        autoplay: true,
        autoplayTimeout: 5000, // Cambia automáticamente cada 3 segundos
