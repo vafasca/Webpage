@@ -12,6 +12,7 @@ import { HomePartialTalentProgramComponent } from './home-partial-talent-program
 import { HomePartialCareersComponent } from './home-partial-careers/home-partial-careers.component';
 import { CardListCareerComponent } from './card-list-career/card-list-career.component';
 import { CardCareerComponent } from './card-career/card-career.component';
+import { HomeTestimonialComponent } from './home-testimonial/home-testimonial.component';
 
 
 @NgModule({
@@ -24,7 +25,8 @@ import { CardCareerComponent } from './card-career/card-career.component';
     HomePartialTalentProgramComponent,
     HomePartialCareersComponent,
     CardListCareerComponent,
-    CardCareerComponent
+    CardCareerComponent,
+    HomeTestimonialComponent
   ],
   imports: [
     CommonModule,

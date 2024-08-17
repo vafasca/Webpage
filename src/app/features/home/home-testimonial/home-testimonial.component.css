@@ -1,0 +1,84 @@
+.testimonial-container{
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    background-image: url("../../../../assets/images/background-testimonial.jpg");
+    color: #FFFFFF;
+    margin-top: 100px;
+}
+
+.heading-title-testimonial .elementor-heading-title{
+    color: #FFFFFF;                /* Color del texto */
+    font-family: "Bebas Neue", Sans-serif; /* Fuente del texto */
+    font-size: 44px;               /* Tamaño de la fuente */
+    text-align: center;            /* Centra el texto horizontalmente */
+    font-weight: bold;             /* Hace que el texto sea negrita */
+    letter-spacing: 2px;           /* Espacio entre letras */
+    text-transform: uppercase;
+    padding: 50px 0 50px 0;
+}
+
+.content-testimonial{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.content-testimonial .card{
+    flex: 1;
+    /* margin: 0 10px; */
+
+}
+
+.content-testimonial .card .img{
+    height: 200px;
+    width: 200px;
+    margin: 0 auto; /* Centra la imagen horizontalmente */
+    border-radius: 50%; /* Hace que la imagen sea circular */
+    overflow: hidden; /* Asegura que la imagen quede dentro del borde circular */
+}
+
+.content-testimonial .card .img img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 50%; /* Asegura que la imagen se mantenga circular dentro de su contenedor */
+}
+
+.content-testimonial .card .content{
+    padding: 10px 20px;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Asegura que los elementos se distribuyan equitativamente */
+}
+
+.card .content .testimonial-comment{
+    font-size: 15px;
+    flex-grow: 1; /* Permite que el comentario ocupe el espacio disponible */
+    margin-bottom: 20px; /* Espacio entre el comentario y los elementos de nombre/posición */
+}
+
+.card .content .testimonial-position{
+    text-align: center;
+}
+
+.card .content .testimonial-name{
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 20px;
+    text-align: center;
+    /* margin-top: 100px; */
+    text-transform: uppercase;
+    margin-bottom: 30px;
+}
+
+.card .content p{
+    text-align: center;
+    margin: 10px 0;
+}
+/*
+img{
+    width: 200px;
+    height: 200px;
+} */
