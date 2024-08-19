@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { CarouselModule } from 'ngx-owl-carousel-o';
+
 
 import { HomeRoutingModule } from './home-routing.module';
 import { HomeComponent } from './home.component';
@@ -14,7 +14,7 @@ import { HomePartialCareersComponent } from './home-partial-careers/home-partial
 import { CardListCareerComponent } from './card-list-career/card-list-career.component';
 import { CardCareerComponent } from './card-career/card-career.component';
 import { HomeTestimonialComponent } from './home-testimonial/home-testimonial.component';
-
+import { CarouselModule } from 'ngx-owl-carousel-o';
 
 @NgModule({
   declarations: [
