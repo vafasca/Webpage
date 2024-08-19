@@ -28,7 +28,7 @@
         }
       }
     };
-    
+
     slidesStore = [
       {
         id: 1,
