@@ -4,11 +4,9 @@
     <h2 class="elementor-heading-title">Ser un DHR</h2>
   </div>
   <swiper-container
-    [slidesPerView]="3"
-    [spaceBetween]="10"
-    [loop]="true"
-    [autoplay]="{ delay: 3000, disableOnInteraction: false }"
     [breakpoints]="breakpoints"
+    loop="true"
+    autoplay-delay="2500" autoplay-disable-on-interaction="false"
     class="mySwiper">
     <swiper-slide *ngFor="let slide of slidesStore">
       <div class="content-testimonial">
