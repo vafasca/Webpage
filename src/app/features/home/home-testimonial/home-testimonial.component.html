@@ -1,31 +1,34 @@
 <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
 <div class="testimonial-container">
-    <div class="heading-title-testimonial">
-      <h2 class="elementor-heading-title">Ser un DHR</h2>
-    </div>
-    <owl-carousel-o [options]="customOptions">
-      <ng-container *ngFor="let slide of slidesStore">
-        <ng-template carouselSlide [id]="slide.id.toString()">
-          <div class="content-testimonial">
-            <div class="card">
-              <figure class="img">
-                <img [src]="slide.src" [alt]="slide.alt">
-              </figure>
-              <div class="content">
-                <div class="testimonial-comment">
-                  <p>{{ slide.comment }}</p>
-                </div>
-                <div class="testimonial-name">
-                  <span>{{ slide.name }}</span>
-                </div>
-                <div class="testimonial-position">
-                  <span>{{ slide.position }}</span>
-                </div>
-              </div>
+  <div class="heading-title-testimonial">
+    <h2 class="elementor-heading-title">Ser un DHR</h2>
+  </div>
+  <swiper-container
+    [slidesPerView]="3"
+    [spaceBetween]="10"
+    [loop]="true"
+    [autoplay]="{ delay: 3000, disableOnInteraction: false }"
+    [breakpoints]="breakpoints"
+    class="mySwiper">
+    <swiper-slide *ngFor="let slide of slidesStore">
+      <div class="content-testimonial">
+        <div class="card">
+          <figure class="img">
+            <img [src]="slide.src" [alt]="slide.alt">
+          </figure>
+          <div class="content">
+            <div class="testimonial-comment">
+              <p>{{ slide.comment }}</p>
+            </div>
+            <div class="testimonial-name">
+              <span>{{ slide.name }}</span>
+            </div>
+            <div class="testimonial-position">
+              <span>{{ slide.position }}</span>
             </div>
           </div>
-        </ng-template>
-      </ng-container>
-    </owl-carousel-o>
-  </div>
-  
+        </div>
+      </div>
+    </swiper-slide>
+  </swiper-container>
+</div>
