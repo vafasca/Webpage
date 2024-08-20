@@ -13,7 +13,8 @@
     display: flex;
     justify-content: space-between;
     padding: 80px 50px 80px 50px;
-    background: linear-gradient(to right, #56D2D2, #3695D4, #246BB2);
+    /* background: linear-gradient(to right, #56D2D2, #3695D4, #246BB2); */
+    background: linear-gradient(to right, #EE764A, #c36);
     border-radius: 10px;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
     opacity: 0.7;
@@ -64,7 +65,8 @@ button.learn-more {
 }
 
 button.learn-more:hover {
-    background: linear-gradient(to right, #56D2D2, #3695D4, #246BB2);
+    /* background: linear-gradient(to right, #56D2D2, #3695D4, #246BB2); */
+    background: linear-gradient(to right, #EE764A, #c36);
 }
 
 .elementor-icon-list-icon {

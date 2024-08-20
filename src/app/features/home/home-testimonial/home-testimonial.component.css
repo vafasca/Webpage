@@ -3,8 +3,10 @@
     padding: 0;
     margin: 0;
     background-image: url("../../../../assets/images/background-testimonial.jpg");
+    background-size: cover;
     color: #FFFFFF;
     margin-top: 100px;
+    height: 100vh;
 }
 
 .heading-title-testimonial .elementor-heading-title{
@@ -27,7 +29,6 @@
 .content-testimonial .card{
     flex: 1;
     /* margin: 0 10px; */
-
 }
 
 .content-testimonial .card .img{
@@ -47,7 +48,7 @@
 
 .content-testimonial .card .content{
     padding: 10px 20px;
-    height: 250px;
+    height: 220px;
     display: flex;
     flex-direction: column;
     justify-content: space-between; /* Asegura que los elementos se distribuyan equitativamente */

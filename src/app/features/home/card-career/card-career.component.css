@@ -63,5 +63,6 @@
 .card__article:hover .card__data {
   transform: translateY(-100px);
   opacity: 1;
-  background: linear-gradient(to right, #56D2D2, #3695D4, #246BB2);
+  /* background: linear-gradient(to right, #56D2D2, #3695D4, #246BB2); */
+  background: linear-gradient(to right, #EE764A, #c36);
 }
