@@ -15,6 +15,7 @@ import { CardListCareerComponent } from './card-list-career/card-list-career.com
 import { CardCareerComponent } from './card-career/card-career.component';
 import { HomeTestimonialComponent } from './home-testimonial/home-testimonial.component';
 import { CarouselModule } from 'ngx-owl-carousel-o';
+import { HomePartialNewsComponent } from './home-partial-news/home-partial-news.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +28,8 @@ import { CarouselModule } from 'ngx-owl-carousel-o';
     HomePartialCareersComponent,
     CardListCareerComponent,
     CardCareerComponent,
-    HomeTestimonialComponent
+    HomeTestimonialComponent,
+    HomePartialNewsComponent
   ],
   imports: [
     CommonModule,
