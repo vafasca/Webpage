@@ -6,3 +6,7 @@
   from = "/*"
   to = "/index.html"
   status = 200
+
+[build.processing.css]
+  bundle = false
+  minify = false
