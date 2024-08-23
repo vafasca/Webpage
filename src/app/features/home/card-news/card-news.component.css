@@ -1,13 +1,22 @@
 
+.card-title {
+    font-size: 0.9rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2; /* Ajusta a 1 línea */
+    -webkit-box-orient: vertical;
+}
+
 
 /*default*/
 .example-card {
     max-width: 250px;
-    height: 450px;
+    height: 400px;
 }
 
-.example-header-image {
-    background-image: url('https://material.angular.io/assets/img/examples/shiba1.jpg');
+.mat-card-image:first-child{
+    height: 180px;
     background-size: cover;
 }
 
@@ -24,6 +33,6 @@
     overflow: hidden;
     text-overflow: ellipsis;
     display: -webkit-box;
-    -webkit-line-clamp: 5; /* Ajusta el número de líneas visibles */
+    -webkit-line-clamp: 4; /* Ajusta el número de líneas visibles */
     -webkit-box-orient: vertical;
 }
