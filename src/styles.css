@@ -1,5 +1,7 @@
 /* You can add global styles to this file, and also import other style files */
 @import url('https://fonts.googleapis.com/css2?family=Noir+Pro:ital,wght@0,400;1,400&display=swap');
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+
 
 html,
 body {
