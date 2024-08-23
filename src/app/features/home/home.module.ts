@@ -6,7 +6,6 @@ import {MatButtonModule} from '@angular/material/button';
 import { HomeRoutingModule } from './home-routing.module';
 import { HomeComponent } from './home.component';
 import { SharedModule } from 'src/app/shared/shared.module';
-import { HomeCarouselComponent } from './home-carousel/home-carousel.component';
 import { HomeParalaxComponent } from './home-paralax/home-paralax.component';
 import { HomeSloganComponent } from './home-slogan/home-slogan.component';
 import { HomePartialAboutUsComponent } from './home-partial-about-us/home-partial-about-us.component';
@@ -23,7 +22,6 @@ import { CardListNewsComponent } from './card-list-news/card-list-news.component
 @NgModule({
   declarations: [
     HomeComponent,
-    HomeCarouselComponent,
     HomeParalaxComponent,
     HomeSloganComponent,
     HomePartialAboutUsComponent,
