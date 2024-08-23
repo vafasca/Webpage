@@ -18,6 +18,7 @@ import { CarouselModule } from 'ngx-owl-carousel-o';
 import { HomePartialNewsComponent } from './home-partial-news/home-partial-news.component';
 import { CardNewsComponent } from './card-news/card-news.component';
 import { CardListNewsComponent } from './card-list-news/card-list-news.component';
+import { AngularMaterialModule } from 'src/app/shared/modules/angular-material/angular-material.module';
 
 @NgModule({
   declarations: [
@@ -39,8 +40,7 @@ import { CardListNewsComponent } from './card-list-news/card-list-news.component
     HomeRoutingModule,
     SharedModule,
     CarouselModule,
-    MatCardModule,
-    MatButtonModule
+    AngularMaterialModule
   ],
   schemas: [CUSTOM_ELEMENTS_SCHEMA]
 })
