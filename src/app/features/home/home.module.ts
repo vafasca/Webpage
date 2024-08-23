@@ -14,7 +14,7 @@ import { HomePartialCareersComponent } from './home-partial-careers/home-partial
 import { CardListCareerComponent } from './card-list-career/card-list-career.component';
 import { CardCareerComponent } from './card-career/card-career.component';
 import { HomeTestimonialComponent } from './home-testimonial/home-testimonial.component';
-import { CarouselModule } from 'ngx-owl-carousel-o';
+
 import { HomePartialNewsComponent } from './home-partial-news/home-partial-news.component';
 import { CardNewsComponent } from './card-news/card-news.component';
 import { CardListNewsComponent } from './card-list-news/card-list-news.component';
@@ -39,7 +39,6 @@ import { AngularMaterialModule } from 'src/app/shared/modules/angular-material/a
     CommonModule,
     HomeRoutingModule,
     SharedModule,
-    CarouselModule,
     AngularMaterialModule
   ],
   schemas: [CUSTOM_ELEMENTS_SCHEMA]
