@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Card } from '../models/card.model';
+import { CareerCard } from '../models/career-card.model';
 
 @Component({
   selector: 'app-card-list-career',
@@ -8,7 +8,7 @@ import { Card } from '../models/card.model';
 })
 export class CardListCareerComponent implements OnInit {
 
-  cards: Card[] = [
+  cards: CareerCard[] = [
     {
       imageUrl: '../../../../assets/images/background-card4.jpg',
       title: 'Perfomance Engineer',

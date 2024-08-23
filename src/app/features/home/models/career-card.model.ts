@@ -1,4 +1,4 @@
-export interface Card {
+export interface CareerCard {
     imageUrl: string;
     title: string;
     location: string;

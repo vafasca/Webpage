@@ -16,3 +16,6 @@ body {
   background-attachment: fixed; /* La imagen de fondo se mantiene fija durante el desplazamiento */
   background-position: center; /* Centra la imagen de fondo */
 }
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

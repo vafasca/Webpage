@@ -1,0 +1,8 @@
+<div class="list-container">
+    <app-card-news *ngFor="let card of cards"
+                    [imageUrl]="card.imageUrl"
+                    [title]="card.title"
+                    [published]="card.published"
+                    [description]="card.description">
+    </app-card-news>
+</div>
