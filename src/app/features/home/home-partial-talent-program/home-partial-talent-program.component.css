@@ -83,3 +83,72 @@ button.learn-more:hover {
     display: inline-block;
     vertical-align: top;
 }
+
+@media (max-width: 1260px) {
+    .elementor-section-talent-program {
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+        margin: 0;
+    }
+
+    .title-container {
+        margin-bottom: 20px;
+        text-align: center;
+        width: 100%;
+    }
+
+    .text-container {
+        display: flex;
+        width: calc(100% - 40px);
+        padding: 40px 20px 10px;
+        box-sizing: border-box;
+    }
+
+    .learn-more {
+        align-self: center;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .left-elementor, .right-elementor {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 560px) {
+    .elementor-section-talent-program {
+        padding: 0 10px;
+    }
+/* 
+    .text-container {
+        padding: 20px;
+    } */
+
+    .elementor-heading-title {
+        font-size: 28px;
+    }
+
+    .elementor-icon-list-item {
+        font-size: 16px;
+    }
+
+    .elementor-icon-list-icon img {
+        width: 30px;
+        height: 30px;
+    }
+
+    .text-container {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        /* width: calc(100% - 20px); */
+        box-sizing: border-box;
+        /* padding: 20px; */
+    }
+
+    .left-elementor, .right-elementor {
+        margin-left: -40px;
+    }
+}
