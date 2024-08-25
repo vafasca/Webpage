@@ -1,17 +1,28 @@
 <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
 
 <header class="header">
-
   <div class="logo">
-    <a routerLink="/home"><img id="image-logo" src="{{logo}}" alt="Logo" title="Digital Harbor"></a>
+    <a routerLink="/home">
+      <img id="image-logo" src="{{logo}}" alt="Logo" title="Digital Harbor">
+    </a>
   </div>
-  <nav class="nav-menu">
+  
+  <!-- Burger Icon for small screens -->
+  <!-- <mat-icon class="burger-icon" aria-label="Menu" (click)="toggleNav()">
+    menu
+  </mat-icon> -->
+  <button mat-icon-button class="burger-icon" aria-label="Example icon-button with menu icon" (click)="toggleNav()">
+    <mat-icon>menu</mat-icon>
+  </button>
+  
+  <nav class="nav-menu" [ngClass]="{'active': isNavActive}">
     <ul>
-      <li><a routerLink="/home" routerLinkActive="router-link-active" >INICIO</a></li>
+      <li><a routerLink="/home" routerLinkActive="router-link-active">INICIO</a></li>
       <li><a routerLink="/jobs">CONOCE DH</a></li>
-      <li><a routerLink="/contait">CONVIERTETE EN UN DHR</a></li>
+      <li><a routerLink="/contait">CONVIÉRTETE EN UN DHR</a></li>
       <li><a routerLink="/contact">BLOG</a></li>
       <li><a routerLink="/contact">HAZ CONTACTO CON DH</a></li>
     </ul>
   </nav>
 </header>
+
