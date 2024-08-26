@@ -9,6 +9,10 @@
     <app-home-partial-careers></app-home-partial-careers>
     <app-home-testimonial></app-home-testimonial>
     <app-home-partial-news></app-home-partial-news>
+    <button *ngIf="isButtonVisible" (click)="scrollToTop()" class="scroll-to-top">
+      <i class="fa-solid fa-arrow-up"></i>
+    </button>
+    
   </main>
   <footer>
     <app-footer></app-footer>

@@ -1,60 +1,67 @@
 
-footer{
+.footer{
    width: 100%;
-   background: #666;
-   display: block; 
+   background: linear-gradient(to right, #ee764a, #c36);
+   display: block;
 }
-footer:hover{
-  background-color: grey;
-}
+
 .inner-footer {
-   width: 95%;
+   width: 100%;
    margin: auto;
    padding: 30px 10px;
-   display: flex; 
-   flex-wrap: wrap; 
+   display: flex;
+   flex-wrap: wrap;
    box-sizing: border-box;
-   justify-content: center; 
+   justify-content: center;
+}
 
-
+#image_logo_footer{
+   width: 350px;
+   height: 300px;
 }
 
 .footer-items {
    width: 25%;
    padding: 10px 20px;
    box-sizing: border-box;
-
 }
 
 h1 {
    padding: 10px 0;
    font-size: 25px;
    color: #fff;
-   text-transform: uppercase; 
+   text-transform: uppercase;
 }
 
 .footer-items p{
-    color: #fff;
-    font-size: 16px;
-    text-align: justify;
-    line-height: 25px; 
-    font-family: 'Oswald', sans-serif;
+   color: #fff;
+   font-size: 16px;
+   text-align: justify;
+   line-height: 25px;
+   font-family: 'Oswald', sans-serif;
+}
 
+.footer-items ul li{
+   display: flex;
+   align-items: center;
+   text-align: center;
+}
 
+.footer-items ul li .footer_content{
+   font-size: 15px;
 }
 
 h2 {
    margin: 10px 0;
    color: rgb(17, 17, 17);
-   font-size: 16px; 
+   font-size: 16px;
    font-weight: lighter;
-   text-transform: uppercase; 
-
+   text-transform: uppercase;
 }
 
 .border {
    height: 2px;
-   width: 40px; 
+   width: 40px;
    background: #ff9800;
 
 }
@@ -69,31 +76,30 @@ ul {
 
 ul a {
    text-decoration: none;
-   outline: none; 
+   outline: none;
    color: #fff;
-   transition: 0.3s; 
+   transition: 0.3s;
 
 }
 
 ul a:hover {
-    color: #ff9800;
+   color: #ff9800;
 
 }
 
 ul li {
    margin: 10px 0;
-   height: 25px; 
+   height: 25px;
 }
 
 li i {
-    margin-right: 20px;
-
+   margin-right: 20px;
 }
 
 .social-media {
-   width: 100%; 
+   width: 100%;
    color: #fff;
-   text-align: center; 
+   text-align: center;
 }
 
 .social-media a {
@@ -104,50 +110,53 @@ li i {
 .social-media i {
    height: 15px;
    width: 15px;
-   margin: 20px 5px; 
+   margin: 20px 5px;
    padding: 10px;
-   color: #fff; 
-   border-radius: 50%; 
-   border: 1px solid grey; 
-   transition: 0.3s; 
-
-
+   color: #fff;
+   border-radius: 50%;
+   border: 1px solid grey;
+   transition: 0.3s;
 }
 
 .social-media i:hover {
-    background: grey; 
-
-
+   background: #ff9800;
 }
 
 .footer-bottom {
    padding: 10px;
    background: #3d544f;
-   color: #fff; 
-   font-size: 12px; 
-
+   color: #fff;
+   font-size: 12px;
 }
 
-@media screen and (max-width: 1085px) {
+@media screen and (max-width: 1300px) {
    .footer-items {
-     width: 50%;
-
+      width: 50%;
    }
 
 }
 
 @media screen and (max-width: 600px) {
-    .footer-items {
-      width: 100%;
- 
-    }
- 
- }
+   .footer-items {
+      width: 90%;
+   }
+}
 
- @media screen and (max-width: 478px) {
-    .footer-items {
+@media screen and (max-width: 700px) {
+   .footer-items {
       width: 100%;
- 
-    }
- 
- }
+   }
+   .footer-items .logo_container{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+   }
+}
+
+.footer-bottom{
+   padding: 20px;
+   text-align: center;
+   background: #000000;
+   color: #fff;
+   font-size: 15px;
+}
