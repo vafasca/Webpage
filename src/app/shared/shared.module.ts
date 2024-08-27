@@ -7,6 +7,7 @@ import {MatIconModule} from '@angular/material/icon';
 import {MatToolbarModule} from '@angular/material/toolbar';
 
 import { RouterModule } from '@angular/router';
+import { AngularMaterialModule } from './modules/angular-material/angular-material.module';
 
 @NgModule({
   declarations: [
@@ -15,15 +16,16 @@ import { RouterModule } from '@angular/router';
   ],
   exports:[
     HeaderComponent,
-    FooterComponent,
-    MatIconModule,
-    MatToolbarModule
+    FooterComponent
+    // MatIconModule,
+    // MatToolbarModule
   ],
   imports: [
     CommonModule,
     RouterModule,
-    MatIconModule,
-    MatToolbarModule
+    AngularMaterialModule
+    // MatIconModule,
+    // MatToolbarModule
   ]
 })
 export class SharedModule { }

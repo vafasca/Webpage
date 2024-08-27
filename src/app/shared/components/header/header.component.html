@@ -6,20 +6,30 @@
       <img id="image-logo" src="{{logo}}" alt="Logo" title="Digital Harbor">
     </a>
   </div>
-  
-  <!-- Burger Icon for small screens -->
-  <!-- <mat-icon class="burger-icon" aria-label="Menu" (click)="toggleNav()">
-    menu
-  </mat-icon> -->
+
   <button mat-icon-button class="burger-icon" aria-label="Example icon-button with menu icon" (click)="toggleNav()">
     <mat-icon>menu</mat-icon>
   </button>
-  
+
   <nav class="nav-menu" [ngClass]="{'active': isNavActive}">
     <ul>
       <li><a routerLink="/home" routerLinkActive="router-link-active">INICIO</a></li>
-      <li><a routerLink="/jobs">CONOCE DH</a></li>
-      <li><a routerLink="/contact">CONVIÉRTETE EN UN DHR</a></li>
+      <li class="dropdown" [ngClass]="{'active': activeDropdown === 'conoceDh'}">
+        <a (click)="toggleDropdown('conoceDh')">CONOCE DH</a>
+        <ul class="dropdown-content">
+          <li><a routerLink="/option1">Opción 1</a></li>
+          <li><a routerLink="/option2">Opción 2</a></li>
+          <li><a routerLink="/option3">Opción 3</a></li>
+        </ul>
+      </li>
+      <li class="dropdown" [ngClass]="{'active': activeDropdown === 'convierteDh'}">
+        <a (click)="toggleDropdown('convierteDh')">CONVIÉRTETE EN UN DHR</a>
+        <ul class="dropdown-content">
+          <li><a routerLink="/option4">Opción 4</a></li>
+          <li><a routerLink="/option5">Opción 5</a></li>
+          <li><a routerLink="/option6">Opción 6</a></li>
+        </ul>
+      </li>
       <li><a routerLink="/contact">BLOG</a></li>
       <li><a routerLink="/contact">HAZ CONTACTO CON DH</a></li>
     </ul>
