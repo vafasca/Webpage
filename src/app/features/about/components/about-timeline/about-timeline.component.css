@@ -138,4 +138,11 @@ p {
     width: 100%;
     top: 30px;
   }
+
+  h1{
+    font-size: 1.2rem;
+  }
+  p {
+    font-size: 0.5rem;
+  }
 }
