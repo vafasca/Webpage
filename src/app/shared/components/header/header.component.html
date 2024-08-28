@@ -13,25 +13,25 @@
 
   <nav class="nav-menu" [ngClass]="{'active': isNavActive}">
     <ul>
-      <li><a routerLink="/home" routerLinkActive="router-link-active">INICIO</a></li>
+      <li><a routerLink="/home" routerLinkActive="router-link-active"><span class="title_nav">INICIO</span></a></li>
       <li class="dropdown" [ngClass]="{'active': activeDropdown === 'conoceDh'}">
-        <a (click)="toggleDropdown('conoceDh')">CONOCE DH</a>
+        <a routerLink="/about" routerLinkActive="router-link-active" (click)="toggleDropdown('conoceDh')"><span class="title_nav">CONOCE DH</span></a>
         <ul class="dropdown-content">
-          <li><a routerLink="/option1">Opción 1</a></li>
-          <li><a routerLink="/option2">Opción 2</a></li>
-          <li><a routerLink="/option3">Opción 3</a></li>
+          <li><a routerLink="/option1" routerLinkActive="router-link-active"><span class="title_nav">Outsourcing, no es lo nuestro</span></a></li>
+          <li><a routerLink="/option2" routerLinkActive="router-link-active"><span class="title_nav">Confía en tu instinto loco</span></a></li>
+          <li><a routerLink="/option3" routerLinkActive="router-link-active"><span class="title_nav">Cultura WOW</span></a></li>
         </ul>
       </li>
       <li class="dropdown" [ngClass]="{'active': activeDropdown === 'convierteDh'}">
-        <a (click)="toggleDropdown('convierteDh')">CONVIÉRTETE EN UN DHR</a>
+        <a routerLinkActive="router-link-active" (click)="toggleDropdown('convierteDh')" routerLinkActive="router-link-active"><span class="title_nav">CONVIÉRTETE EN UN DHR</span></a>
         <ul class="dropdown-content">
-          <li><a routerLink="/option4">Opción 4</a></li>
-          <li><a routerLink="/option5">Opción 5</a></li>
-          <li><a routerLink="/option6">Opción 6</a></li>
+          <li><a routerLink="/option4" routerLinkActive="router-link-active"><span class="title_nav">Programa talento DH</span></a></li>
+          <li><a routerLink="/option5" routerLinkActive="router-link-active"><span class="title_nav">Postulación directa</span></a></li>
+          <!-- <li><a routerLink="/option6" routerLinkActive="router-link-active"><span class="title_nav">Opción 3</span></a></li> -->
         </ul>
       </li>
-      <li><a routerLink="/contact">BLOG</a></li>
-      <li><a routerLink="/contact">HAZ CONTACTO CON DH</a></li>
+      <li><a routerLink="/contact" routerLinkActive="router-link-active"><span class="title_nav">BLOG</span></a></li>
+      <li><a routerLink="/jobs" routerLinkActive="router-link-active"><span class="title_nav">HAZ CONTACTO CON DH</span></a></li>
     </ul>
   </nav>
 </header>

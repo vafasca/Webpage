@@ -21,6 +21,7 @@
 .logo {
   display: flex;
   align-items: center;
+  padding-top: 20px;
 }
 
 .logo img {
@@ -53,7 +54,7 @@
   background-color: #ee764a;
   list-style: none;
   padding: 0;
-  margin: 0;
+  margin: 10px;
 }
 
 .nav-menu .dropdown {
@@ -90,7 +91,26 @@
   display: block;
 }
 
+.nav-menu .dropdown > a::after {
+  content: ' ▼'; /* Puedes usar '▲' para flecha hacia arriba o cambiar el símbolo por otro si lo prefieres */
+  font-size: 16px;
+  color: white;
+  margin-left: 5px;
+  transition: transform 0.3s ease;
+}
+
+.router-link-active .title_nav{
+  color: #ee764a;
+}
+
 @media (max-width: 1100px) {
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: transparent;
+    padding: 50px 120px 20px 20px;
+  }
   .nav-menu {
     flex-direction: column;
     align-items: center;
@@ -125,7 +145,7 @@
   .nav-menu.active {
     display: flex;
     position: absolute;
-    top: 90px;
+    top: 120px;
     right: 0;
     /* flex-direction: column; */
     /* border-radius: 8px; */
@@ -203,6 +223,7 @@
 
   .logo img {
     margin-left: 0;
+    padding-top: 30px;
   }
 
   .burger-icon {
@@ -221,7 +242,7 @@
   .nav-menu.active {
     /* display: flex; */
     position: absolute;
-    top: 130px;
+    top: 160px;
     right: 0;
     flex-direction: column;
     /* background-color: rgba(0, 0, 0, 0.9); */

@@ -1,0 +1,24 @@
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+<section>
+    <h2 class="checkcaption">¿Qué hacemos?</h2>
+
+    <div id="timeline">
+        <div class="dot" id="one" (click)="onDotClick('one')">
+            <span class="date">1997 - 2003</span>
+        </div>
+        <div class="dot" id="two" (click)="onDotClick('two')">
+            <span class="date">2004 - 2008</span>
+        </div>
+        <div class="dot" id="three" (click)="onDotClick('three')">
+            <span class="date">2009 - Present</span>
+        </div>
+    <div class="inside"></div>
+    </div>
+
+    <div class="content">
+        <h1>{{ currentTitle }}</h1>
+        <ul>
+            <li *ngFor="let item of currentContent">{{ item }}</li>
+        </ul>
+    </div>
+</section>

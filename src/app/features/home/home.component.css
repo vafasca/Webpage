@@ -1,17 +1,13 @@
-/* main{
-    background-size: 100% 100%;
-    /* margin-top: 120px;
-    width: 100%;
+.main-container{
+    margin: 0;
+    padding: 0;
 }
-*/
 header{
-    position:absolute; /*fixed*/
+    position:absolute;
     top: 0;
     width: 100%;
     z-index: 1000;
 }
-
-
 
 .scroll-to-top {
     position: fixed;
