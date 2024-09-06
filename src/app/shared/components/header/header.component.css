@@ -63,6 +63,7 @@
 
 .nav-menu .dropdown.active > .dropdown-content {
   display: block;
+  z-index: 999;
 }
 
 .nav-menu .dropdown-content a {
@@ -103,6 +104,10 @@
 
 .nav-menu .dropdown.active > .dropdown-icon {
   transform: rotate(180deg);
+}
+
+.router-link-active .title_nav {
+  color: #ee764a;
 }
 
 /* Media Queries */
@@ -148,7 +153,8 @@
   .nav-menu.active {
     display: flex;
     position: absolute;
-    top: 120px;
+    z-index: 999;
+    top: 170px;
     right: 0;
     width: 100%;
     opacity: 1;
@@ -232,7 +238,8 @@
 
   .nav-menu.active {
     position: absolute;
-    top: 160px;
+    z-index: 999;
+    top: 180px;
     right: 0;
     flex-direction: column;
     border-radius: 8px;
