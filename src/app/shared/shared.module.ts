@@ -3,11 +3,12 @@ import { CommonModule } from '@angular/common';
 import { HeaderComponent } from './components/header/header.component';
 import { FooterComponent } from './components/footer/footer.component';
 
-import {MatIconModule} from '@angular/material/icon';
-import {MatToolbarModule} from '@angular/material/toolbar';
-
 import { RouterModule } from '@angular/router';
 import { AngularMaterialModule } from './modules/angular-material/angular-material.module';
+// import function to register Swiper custom elements
+import { register } from 'swiper/element/bundle';
+// register Swiper custom elements
+register();
 
 @NgModule({
   declarations: [
@@ -17,15 +18,11 @@ import { AngularMaterialModule } from './modules/angular-material/angular-materi
   exports:[
     HeaderComponent,
     FooterComponent
-    // MatIconModule,
-    // MatToolbarModule
   ],
   imports: [
     CommonModule,
     RouterModule,
     AngularMaterialModule
-    // MatIconModule,
-    // MatToolbarModule
   ]
 })
 export class SharedModule { }

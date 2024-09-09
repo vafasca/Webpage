@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import { CUSTOM_ELEMENTS_SCHEMA, NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 import { AboutRoutingModule } from './about-routing.module';
@@ -6,18 +6,25 @@ import { AboutComponent } from './about.component';
 import { SharedModule } from 'src/app/shared/shared.module';
 import { AboutTimelineComponent } from './components/about-timeline/about-timeline.component';
 import { AboutShortStoryComponent } from './components/about-short-story/about-short-story.component';
+import { AboutTecnologyCarouselComponent } from './components/about-tecnology-carousel/about-tecnology-carousel.component';
+import { AngularMaterialModule } from 'src/app/shared/modules/angular-material/angular-material.module';
+import { WowCultureComponent } from './components/wow-culture/wow-culture.component';
 
 
 @NgModule({
   declarations: [
     AboutComponent,
     AboutTimelineComponent,
-    AboutShortStoryComponent
+    AboutShortStoryComponent,
+    AboutTecnologyCarouselComponent,
+    WowCultureComponent
   ],
   imports: [
     CommonModule,
     AboutRoutingModule,
-    SharedModule
-  ]
+    SharedModule,
+    AngularMaterialModule
+  ],
+  schemas: [CUSTOM_ELEMENTS_SCHEMA]
 })
 export class AboutModule { }
