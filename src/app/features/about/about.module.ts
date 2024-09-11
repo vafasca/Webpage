@@ -10,6 +10,7 @@ import { AboutTecnologyCarouselComponent } from './components/about-tecnology-ca
 import { AngularMaterialModule } from 'src/app/shared/modules/angular-material/angular-material.module';
 import { WowCultureComponent } from './components/wow-culture/wow-culture.component';
 import { AboutUsComponent } from './components/about-us/about-us.component';
+import { AboutEmployeeTestimonialComponent } from './components/about-employee-testimonial/about-employee-testimonial.component';
 
 
 @NgModule({
@@ -19,7 +20,8 @@ import { AboutUsComponent } from './components/about-us/about-us.component';
     AboutShortStoryComponent,
     AboutTecnologyCarouselComponent,
     WowCultureComponent,
-    AboutUsComponent
+    AboutUsComponent,
+    AboutEmployeeTestimonialComponent
   ],
   imports: [
     CommonModule,

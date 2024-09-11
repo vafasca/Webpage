@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { StarBackgroundService } from 'src/app/shared/services/star-background.service';
 
 @Component({
   selector: 'app-wow-culture',
@@ -7,9 +8,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class WowCultureComponent implements OnInit {
 
-  constructor() { }
+  constructor(private backgroundService: StarBackgroundService) { }
 
   ngOnInit(): void {
+    this.backgroundService.addStars('.star-container', 50);
   }
 
 }

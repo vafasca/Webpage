@@ -21,4 +21,9 @@
     padding-left: 80px;
     align-items: center;
   }
+  .elementor-heading-title{
+    font-weight: 600;
+    font-size: 32px;
+    letter-spacing: 4.5px;
+  }
 }
