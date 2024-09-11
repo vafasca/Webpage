@@ -9,6 +9,7 @@ import { AboutShortStoryComponent } from './components/about-short-story/about-s
 import { AboutTecnologyCarouselComponent } from './components/about-tecnology-carousel/about-tecnology-carousel.component';
 import { AngularMaterialModule } from 'src/app/shared/modules/angular-material/angular-material.module';
 import { WowCultureComponent } from './components/wow-culture/wow-culture.component';
+import { AboutUsComponent } from './components/about-us/about-us.component';
 
 
 @NgModule({
@@ -17,7 +18,8 @@ import { WowCultureComponent } from './components/wow-culture/wow-culture.compon
     AboutTimelineComponent,
     AboutShortStoryComponent,
     AboutTecnologyCarouselComponent,
-    WowCultureComponent
+    WowCultureComponent,
+    AboutUsComponent
   ],
   imports: [
     CommonModule,

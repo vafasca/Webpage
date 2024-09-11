@@ -55,7 +55,7 @@
 .nav-menu .dropdown-content {
   display: none;
   position: absolute;
-  background-color: #ee764a;
+  background-color: #000000;
   list-style: none;
   padding: 0;
   margin: 10px;
@@ -77,7 +77,8 @@
 }
 
 .nav-menu .dropdown-content a:hover {
-  background-color: rgba(255, 255, 255, 0.2);
+  /* background-color: rgba(255, 255, 255, 0.2); */
+  color: #ee764a;
 }
 
 .nav-menu .dropdown-content li {
@@ -106,9 +107,9 @@
   transform: rotate(180deg);
 }
 
-.router-link-active .title_nav {
-  color: #ee764a;
-}
+/* .router-link-active .title_nav {
+  color: #ff3c00;
+} */
 
 /* Media Queries */
 @media (max-width: 1100px) {
