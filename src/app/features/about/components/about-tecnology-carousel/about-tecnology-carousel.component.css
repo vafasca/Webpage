@@ -16,7 +16,7 @@
   height: 30px;
 }
 
-@media (max-width: 400px) {
+@media (max-width: 600px) {
   .card .img{
     padding-left: 80px;
     align-items: center;
