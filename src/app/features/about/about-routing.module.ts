@@ -1,8 +1,8 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { AboutComponent } from './about.component';
-import { WowCultureComponent } from './components/wow-culture/wow-culture.component';
-import { AboutUsComponent } from './components/about-us/about-us.component';
+import { AboutUsComponent } from './components/conoce-dh/about-us-container/about-us.component';
+import { WowCultureContainerComponent } from './components/cultura-wow/wow-culture-container/wow-culture-container.component';
 
 const routes: Routes = [
   { path: '', component: AboutComponent,
@@ -11,7 +11,7 @@ const routes: Routes = [
       path: 'sobre-nosotros', component: AboutUsComponent
     },
     {
-      path: 'cultura-wow', component: WowCultureComponent
+      path: 'cultura-wow', component: WowCultureContainerComponent
     }
   ] }
 ];

@@ -4,13 +4,14 @@ import { CommonModule } from '@angular/common';
 import { AboutRoutingModule } from './about-routing.module';
 import { AboutComponent } from './about.component';
 import { SharedModule } from 'src/app/shared/shared.module';
-import { AboutTimelineComponent } from './components/about-timeline/about-timeline.component';
-import { AboutShortStoryComponent } from './components/about-short-story/about-short-story.component';
-import { AboutTecnologyCarouselComponent } from './components/about-tecnology-carousel/about-tecnology-carousel.component';
+import { AboutTimelineComponent } from './components/conoce-dh/about-timeline/about-timeline.component';
+import { AboutShortStoryComponent } from './components/conoce-dh/about-short-story/about-short-story.component';
+import { AboutTecnologyCarouselComponent } from './components/conoce-dh/about-tecnology-carousel/about-tecnology-carousel.component';
 import { AngularMaterialModule } from 'src/app/shared/modules/angular-material/angular-material.module';
-import { WowCultureComponent } from './components/wow-culture/wow-culture.component';
-import { AboutUsComponent } from './components/about-us/about-us.component';
-import { AboutEmployeeTestimonialComponent } from './components/about-employee-testimonial/about-employee-testimonial.component';
+import { WowCultureComponent } from './components/cultura-wow/wow-culture-description/wow-culture.component';
+import { AboutUsComponent } from './components/conoce-dh/about-us-container/about-us.component';
+import { AboutEmployeeTestimonialComponent } from './components/cultura-wow/about-employee-testimonial/about-employee-testimonial.component';
+import { WowCultureContainerComponent } from './components/cultura-wow/wow-culture-container/wow-culture-container.component';
 
 
 @NgModule({
@@ -21,7 +22,8 @@ import { AboutEmployeeTestimonialComponent } from './components/about-employee-t
     AboutTecnologyCarouselComponent,
     WowCultureComponent,
     AboutUsComponent,
-    AboutEmployeeTestimonialComponent
+    AboutEmployeeTestimonialComponent,
+    WowCultureContainerComponent
   ],
   imports: [
     CommonModule,
