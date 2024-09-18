@@ -1,4 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
+import { DomSanitizer, SafeResourceUrl } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-card-news',
@@ -7,14 +8,17 @@ import { Component, Input, OnInit } from '@angular/core';
 })
 export class CardNewsComponent implements OnInit {
 
-  @Input() imageUrl!: string;
+  @Input() iframeUrl!: string;
   @Input() title!: string;
-  @Input() published!: string;
-  @Input() description!: string
+  @Input() linkedInUrl!: string;
 
-  constructor() { }
+  safeIframeUrl!: SafeResourceUrl;
+
+  constructor(private sanitizer: DomSanitizer) { }
 
   ngOnInit(): void {
+    // Sanitizado la URL del iframe
+    this.safeIframeUrl = this.sanitizer.bypassSecurityTrustResourceUrl(this.iframeUrl);
   }
 
 }

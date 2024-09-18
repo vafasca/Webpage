@@ -1,6 +1,5 @@
 export interface NewsCard {
-    imageUrl: string;
+    iframeUrl: string;
     title: string;
-    published: string;
-    description: string;
+    linkedInUrl: string;
 }

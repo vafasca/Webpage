@@ -12,6 +12,10 @@ import { WowCultureComponent } from './components/cultura-wow/wow-culture-descri
 import { AboutUsComponent } from './components/conoce-dh/about-us-container/about-us.component';
 import { AboutEmployeeTestimonialComponent } from './components/cultura-wow/about-employee-testimonial/about-employee-testimonial.component';
 import { WowCultureContainerComponent } from './components/cultura-wow/wow-culture-container/wow-culture-container.component';
+import { InstinctCrazyContainerComponent } from './components/instinto-loco/instinct-crazy-container/instinct-crazy-container.component';
+import { NotOutsourcingContainerComponent } from './components/no-outsourcing/not-outsourcing-container/not-outsourcing-container.component';
+import { InstinctCrazyDescriptionComponent } from './components/instinto-loco/instinct-crazy-description/instinct-crazy-description.component';
+import { HomeModule } from '../home/home.module';
 
 
 @NgModule({
@@ -23,13 +27,17 @@ import { WowCultureContainerComponent } from './components/cultura-wow/wow-cultu
     WowCultureComponent,
     AboutUsComponent,
     AboutEmployeeTestimonialComponent,
-    WowCultureContainerComponent
+    WowCultureContainerComponent,
+    InstinctCrazyContainerComponent,
+    NotOutsourcingContainerComponent,
+    InstinctCrazyDescriptionComponent
   ],
   imports: [
     CommonModule,
     AboutRoutingModule,
     SharedModule,
-    AngularMaterialModule
+    AngularMaterialModule,
+    HomeModule
   ],
   schemas: [CUSTOM_ELEMENTS_SCHEMA]
 })
