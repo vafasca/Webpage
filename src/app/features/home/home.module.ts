@@ -35,7 +35,7 @@ import { AngularMaterialModule } from 'src/app/shared/modules/angular-material/a
     CardNewsComponent,
     CardListNewsComponent
   ],
-  exports: [HomePartialCareersComponent],
+  exports: [HomePartialCareersComponent, HomePartialNewsComponent, CardListNewsComponent],
   imports: [
     CommonModule,
     HomeRoutingModule,
