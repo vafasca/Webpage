@@ -59,3 +59,91 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
   height: 100%;
   overflow: hidden;
 }
+
+/* Preloader estilos generales */
+#preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #000; /* Fondo negro */
+  z-index: 9999;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#text-container {
+  display: flex;
+  font-size: 3rem; /* Tamaño del texto */
+  font-family: 'Courier New', Courier, monospace;
+  color: #fff;
+}
+
+.letter {
+  opacity: 0;
+  animation: appear 0.5s ease forwards;
+  animation-delay: calc(0.3s * var(--i));
+  color: hsl(calc(100 * var(--i)), 100%, 50%);
+  text-shadow: 0 0 10px hsl(calc(100 * var(--i)), 100%, 50%), 0 0 20px hsl(calc(100 * var(--i)), 100%, 50%);
+}
+
+/* Animación para que las letras aparezcan una por una */
+@keyframes appear {
+  to {
+    opacity: 1;
+  }
+}
+
+/* Cambia el color de las letras para que parezca fluorescente */
+.letter:nth-child(odd) {
+  color: #39ff14; /* Verde fluorescente */
+  text-shadow: 0 0 10px #39ff14, 0 0 20px #39ff14;
+}
+
+.letter:nth-child(even) {
+  color: #ff073a; /* Rojo fluorescente */
+  text-shadow: 0 0 10px #ff073a, 0 0 20px #ff073a;
+}
+
+/* Spinner y texto Loading */
+#spinner-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.spinner {
+  border: 4px solid rgba(255, 255, 255, 0.3); /* Parte gris */
+  border-left-color: #ffffff; /* Parte blanca */
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  animation: spin 1s linear infinite;
+}
+
+/* Animación para el spinner */
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Texto de loading */
+#loading-text {
+  font-size: 1.5rem;
+  font-family: 'Roboto', sans-serif;
+  color: #ffffff;
+  margin-top: 10px;
+  opacity: 0;
+  animation: fadeIn 1s forwards 2s; /* Aparece después de 2 segundos */
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}

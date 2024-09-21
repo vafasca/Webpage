@@ -7,4 +7,17 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'Webpage';
+
+  ngAfterViewInit() {
+    setTimeout(() => {
+      const preloader = document.getElementById('preloader');
+      if (preloader) {
+        preloader.classList.add('fade-out');
+
+        setTimeout(() => {
+          preloader.remove();
+        }, 1000);
+      }
+    }, 5000);
+  }
 }

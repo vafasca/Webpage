@@ -40,7 +40,9 @@ const routes: Routes = [
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
+  imports: [RouterModule.forRoot(routes,{
+    scrollPositionRestoration: 'top', // Asegura que comience desde la parte superior en cada vista
+  })],
   exports: [RouterModule],
 })
 export class AppRoutingModule {}
