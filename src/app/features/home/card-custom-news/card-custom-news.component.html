@@ -1,0 +1,18 @@
+cardNews
+<mat-card class="example-card1">
+  <img mat-card-image src="{{ imageCustomUrl }}" alt="Photo of a Shiba Inu" alt="Photo of a Shiba Inu">
+  <mat-card-header>
+    <mat-card-title class="card-title">{{ titleCustom }}</mat-card-title>
+    <mat-card-subtitle>{{ publishedCustom }}</mat-card-subtitle>
+  </mat-card-header>
+    <!-- Línea divisoria -->
+    <hr class="divider-line">
+  <mat-card-content>
+    <p class="description">
+      {{ descriptionCustom }}
+    </p>
+  </mat-card-content>
+  <mat-card-actions>
+    <button mat-raised-button color="accent">Read More</button>
+  </mat-card-actions>
+</mat-card>

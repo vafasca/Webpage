@@ -1,0 +1,20 @@
+<div class="tecnology-carousel-container">
+    <div class="heading-title-testimonial">
+      <h2 class="elementor-heading-title">Las tecnologías que Utilizamos son</h2>
+    </div>
+    <swiper-container
+      [breakpoints]="breakpoints"
+      loop="true"
+      autoplay-delay="2500" autoplay-disable-on-interaction="false"
+      class="mySwiper">
+      <swiper-slide *ngFor="let slide of slidesStore">
+        <div class="content-tecnology-carousel">
+          <div class="card">
+            <figure class="img">
+              <img [src]="slide.src" [alt]="slide.alt">
+            </figure>
+          </div>
+        </div>
+      </swiper-slide>
+    </swiper-container>
+  </div>

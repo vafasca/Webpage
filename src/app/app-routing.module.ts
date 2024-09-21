@@ -3,7 +3,9 @@ import { RouterModule, Routes } from '@angular/router';
 
 const routes: Routes = [
   {
-    path: '', redirectTo: '/home', pathMatch: 'full'
+    path: '',
+    redirectTo: '/home',
+    pathMatch: 'full',
   },
   {
     path: 'home',
@@ -26,7 +28,14 @@ const routes: Routes = [
       import('./features/contact/contact.module').then((m) => m.ContactModule),
   },
   {
-    path: '**', redirectTo: '/home', pathMatch: 'full'
+    path: 'blog',
+    loadChildren: () =>
+      import('./features/blog/blog.module').then((m) => m.BlogModule),
+  },
+  {
+    path: '**',
+    redirectTo: '/home',
+    pathMatch: 'full',
   },
 ];
 

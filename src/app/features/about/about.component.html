@@ -3,11 +3,10 @@
     <app-header></app-header>
   </header>
   <main>
-    <app-about-short-story></app-about-short-story>
-    <app-about-timeline></app-about-timeline>
-    <!-- <button *ngIf="isButtonVisible" (click)="scrollToTop()" class="scroll-to-top">
+    <router-outlet></router-outlet>
+    <button *ngIf="isButtonVisible" (click)="scrollToTop()" class="scroll-to-top">
       <i class="fa-solid fa-arrow-up"></i>
-    </button> -->
+    </button>
   </main>
   <footer>
     <app-footer></app-footer>

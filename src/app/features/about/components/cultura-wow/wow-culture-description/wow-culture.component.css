@@ -1,0 +1,43 @@
+.elementor-heading-title {
+    color: #FFFFFF;                /* Color del texto */
+    font-family: "Bebas Neue", Sans-serif; /* Fuente del texto */
+    font-size: 44px;               /* Tamaño de la fuente */
+    text-align: center;            /* Centra el texto horizontalmente */
+    font-weight: bold;             /* Hace que el texto sea negrita */
+    letter-spacing: 2px;           /* Espacio entre letras */
+    padding-top: 50px;
+}
+
+.wow-culture-cotent{
+    padding: 20px 200px;
+}
+
+.wow-culture-cotent p{
+    color: white;
+    text-align: justify;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 28px;
+    letter-spacing: 0.1rem;
+}
+
+@media (max-width: 1100px) {
+    .wow-culture-cotent{
+        padding: 20px 100px;
+    }
+}
+
+@media (max-width: 600px) {
+    .wow-culture-cotent{
+        padding: 50px 50px;
+    }
+
+    .wow-culture-cotent p{
+        color: white;
+        text-align: justify;
+        font-size: 10px;
+        font-weight: 400;
+        line-height: 28px;
+        letter-spacing: 0.1rem;
+    }
+}

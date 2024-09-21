@@ -1,0 +1,59 @@
+.elementor-heading-title {
+    color: #FFFFFF;                /* Color del texto */
+    font-family: "Bebas Neue", Sans-serif; /* Fuente del texto */
+    font-size: 44px;               /* Tamaño de la fuente */
+    text-align: center;            /* Centra el texto horizontalmente */
+    font-weight: bold;             /* Hace que el texto sea negrita */
+    letter-spacing: 2px;           /* Espacio entre letras */
+    padding-top: 50px;
+}
+
+.elementor-heading-subtitle {
+    color: #FFFFFF;                /* Color del texto */
+    font-family: "Bebas Neue", Sans-serif; /* Fuente del texto */
+    font-size: 20px;               /* Tamaño de la fuente */
+    text-align: center;            /* Centra el texto horizontalmente */
+    letter-spacing: 2px;           /* Espacio entre letras */
+    padding-top: 10px;
+}
+
+.employee-testimonial-content {
+    display: flex;
+    gap: 40px;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px 80px;
+    text-align: center;
+}
+
+.employee-testimonial-content .testimonial-item {
+    flex: 1 1 calc(50% - 40px);
+    box-sizing: border-box;
+}
+
+.employee-testimonial-content .testimonial-item iframe {
+    width: 100%;
+    height: 300px;
+}
+
+/* Ajustes para pantallas de hasta 600px */
+@media (max-width: 800px) {
+    .employee-testimonial-content {
+        padding: 0px 10px;
+    }
+
+    .employee-testimonial-content .testimonial-item {
+        flex: 1 1 100%;
+        margin: 0 10px;
+    }
+
+    .elementor-heading-title{
+        font-weight: 600;
+        font-size: 32px;
+        letter-spacing: 4.5px;
+    }
+
+    .employee-testimonial-content {
+        gap: 10px;
+    }
+}

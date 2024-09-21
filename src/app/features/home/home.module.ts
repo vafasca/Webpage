@@ -19,6 +19,8 @@ import { HomePartialNewsComponent } from './home-partial-news/home-partial-news.
 import { CardNewsComponent } from './card-news/card-news.component';
 import { CardListNewsComponent } from './card-list-news/card-list-news.component';
 import { AngularMaterialModule } from 'src/app/shared/modules/angular-material/angular-material.module';
+import { CardCustomNewsComponent } from './card-custom-news/card-custom-news.component';
+import { CustomCardListNewsComponent } from './custom-card-list-news/custom-card-list-news.component';
 
 @NgModule({
   declarations: [
@@ -33,8 +35,11 @@ import { AngularMaterialModule } from 'src/app/shared/modules/angular-material/a
     HomeTestimonialComponent,
     HomePartialNewsComponent,
     CardNewsComponent,
-    CardListNewsComponent
+    CardListNewsComponent,
+    CardCustomNewsComponent,
+    CustomCardListNewsComponent
   ],
+  exports: [HomePartialCareersComponent, HomePartialNewsComponent, CardListNewsComponent, CustomCardListNewsComponent],
   imports: [
     CommonModule,
     HomeRoutingModule,

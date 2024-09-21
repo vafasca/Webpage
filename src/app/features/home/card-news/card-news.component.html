@@ -1,15 +1,24 @@
 <mat-card class="example-card">
-  <img mat-card-image src="{{ imageUrl }}" alt="Photo of a Shiba Inu" alt="Photo of a Shiba Inu">
+  <div class="iframe-container">
+    <iframe
+      [src]="safeIframeUrl"
+      frameborder="0"
+      allowfullscreen
+      title="Publicación integrada"
+      class="linkedin-iframe">
+    </iframe>
+  </div>
+
+  <!-- Línea divisoria -->
+  <hr class="divider-line">
+
   <mat-card-header>
     <mat-card-title class="card-title">{{ title }}</mat-card-title>
-    <mat-card-subtitle>{{ published }}</mat-card-subtitle>
   </mat-card-header>
-  <mat-card-content>
-    <p class="description">
-      {{ description }}
-    </p>
-  </mat-card-content>
+
   <mat-card-actions>
-    <button mat-raised-button color="accent">Read More</button>
+    <a [href]="linkedInUrl" target="_blank">
+      <button mat-raised-button color="accent">Read More</button>
+    </a>
   </mat-card-actions>
 </mat-card>

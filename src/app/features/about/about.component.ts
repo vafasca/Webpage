@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, HostListener, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-about',
@@ -6,7 +6,16 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./about.component.css']
 })
 export class AboutComponent implements OnInit {
+  isButtonVisible: boolean = false;
 
+  @HostListener('window:scroll', [])
+  onWindowScroll() {
+    this.isButtonVisible = window.pageYOffset > 300;
+  }
+
+  scrollToTop(): void {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }
   constructor() { }
 
   ngOnInit(): void {
