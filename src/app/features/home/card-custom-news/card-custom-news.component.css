@@ -1,0 +1,37 @@
+.card-title {
+    font-size: 0.9rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2; /* Ajusta a 1 línea */
+    -webkit-box-orient: vertical;
+}
+
+
+/*default*/
+.example-card {
+    max-width: 250px;
+    height: 400px;
+}
+
+.mat-card-image:first-child{
+    height: 180px;
+    background-size: cover;
+}
+
+.content-news{
+    display: flex;
+
+}
+.mat-card-content {
+    overflow: hidden;
+    max-height: 150px; /* Ajusta según la altura que quieras asignar al texto */
+}
+
+.description {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 4; /* Ajusta el número de líneas visibles */
+    -webkit-box-orient: vertical;
+}
