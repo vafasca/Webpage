@@ -1,6 +1,6 @@
-export interface NewsCard {
-    imageUrl: string;
-    title: string;
-    published: string;
-    description: string;
+export interface CustomNewsCard {
+    imageCustomUrl: string;
+    titleCustom: string;
+    publishedCustom: string;
+    descriptionCustom: string;
 }

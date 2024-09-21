@@ -7,10 +7,10 @@ import { Component, Input, OnInit } from '@angular/core';
 })
 export class CardCustomNewsComponent implements OnInit {
 
-  @Input() imageUrl!: string;
-  @Input() title!: string;
-  @Input() published!: string;
-  @Input() description!: string
+  @Input() imageCustomUrl!: string;
+  @Input() titleCustom!: string;
+  @Input() publishedCustom!: string;
+  @Input() descriptionCustom!: string
 
   constructor() { }
 

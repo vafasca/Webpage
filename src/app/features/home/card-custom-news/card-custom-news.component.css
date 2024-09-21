@@ -9,9 +9,9 @@
 
 
 /*default*/
-.example-card {
+.example-card1 {
     max-width: 250px;
-    height: 400px;
+    height: 420px;
 }
 
 .mat-card-image:first-child{
@@ -33,5 +33,13 @@
     text-overflow: ellipsis;
     display: -webkit-box;
     -webkit-line-clamp: 4; /* Ajusta el número de líneas visibles */
+    line-clamp: 4; /* Add this line for standard compatibility */
     -webkit-box-orient: vertical;
+}
+
+/* Estilo para la línea divisoria */
+.divider-line {
+    border: none;
+    border-top: 2px solid #EE2D67;
+    margin: 10px 20px;
 }

@@ -1,8 +1,8 @@
-<div class="list-container">
-    <app-card-news *ngFor="let card of cards"
-                    [imageUrl]="card.imageUrl"
-                    [title]="card.title"
-                    [published]="card.published"
-                    [description]="card.description">
-    </app-card-news>
+<div class="list-custom-container">
+    <app-card-custom-news *ngFor="let card of customCards"
+                    [imageCustomUrl]="card.imageCustomUrl"
+                    [titleCustom]="card.titleCustom"
+                    [publishedCustom]="card.publishedCustom"
+                    [descriptionCustom]="card.descriptionCustom">
+    </app-card-custom-news>
 </div>

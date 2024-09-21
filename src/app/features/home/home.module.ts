@@ -39,7 +39,7 @@ import { CustomCardListNewsComponent } from './custom-card-list-news/custom-card
     CardCustomNewsComponent,
     CustomCardListNewsComponent
   ],
-  exports: [HomePartialCareersComponent, HomePartialNewsComponent, CardListNewsComponent],
+  exports: [HomePartialCareersComponent, HomePartialNewsComponent, CardListNewsComponent, CustomCardListNewsComponent],
   imports: [
     CommonModule,
     HomeRoutingModule,
